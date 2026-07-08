@@ -1,0 +1,236 @@
+/* ==========================
+   PANIER PAGE - GLOW SECRETS
+========================== */
+
+
+.formulaire{
+
+width:90%;
+max-width:1000px;
+
+margin:60px auto;
+
+background:rgba(255,255,255,.75);
+
+backdrop-filter:blur(20px);
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 20px 50px rgba(216,27,96,.15);
+
+animation:show .8s ease;
+
+}
+
+
+
+.formulaire h1{
+
+text-align:center;
+
+font-size:45px;
+
+color:#b1124a;
+
+margin-bottom:40px;
+
+}
+
+
+
+/* produits panier */
+
+#panier{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+/* carte produit panier */
+
+#panier .carte{
+
+width:280px;
+
+background:white;
+
+padding:20px;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:0 15px 35px rgba(216,27,96,.12);
+
+transition:.5s;
+
+}
+
+
+
+#panier .carte:hover{
+
+transform:translateY(-10px) scale(1.03);
+
+}
+
+
+
+#panier img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+}
+
+
+
+#panier h3{
+
+margin:20px 0;
+
+font-size:23px;
+
+color:#8e1748;
+
+}
+
+
+
+#panier p{
+
+font-size:25px;
+
+font-weight:700;
+
+color:#d81b60;
+
+}
+
+
+
+/* message panier vide */
+
+#panier:empty::before{
+
+content:"Votre panier est vide 🛒";
+
+font-size:25px;
+
+color:#b1124a;
+
+font-weight:600;
+
+padding:40px;
+
+}
+
+
+
+/* bouton commander */
+
+.formulaire .btn{
+
+display:flex;
+
+width:300px;
+
+margin:40px auto 0;
+
+justify-content:center;
+
+padding:18px;
+
+border-radius:50px;
+
+background:linear-gradient(45deg,#b1124a,#ff4d8d);
+
+color:white;
+
+font-size:20px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.4s;
+
+}
+
+
+
+.formulaire .btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 20px 40px rgba(216,27,96,.35);
+
+}
+
+
+
+/* animation */
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* mobile */
+
+@media(max-width:768px){
+
+.formulaire{
+
+padding:25px;
+
+}
+
+
+.formulaire h1{
+
+font-size:32px;
+
+}
+
+
+#panier .carte{
+
+width:90%;
+
+}
+
+
+}

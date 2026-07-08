@@ -1,0 +1,207 @@
+/* ==========================
+   COMMANDE PAGE - GLOW SECRETS
+========================== */
+
+
+.commande{
+
+width:90%;
+
+max-width:600px;
+
+margin:70px auto;
+
+padding:45px;
+
+background:rgba(255,255,255,.8);
+
+backdrop-filter:blur(20px);
+
+border-radius:35px;
+
+box-shadow:0 25px 60px rgba(216,27,96,.18);
+
+animation:show .8s ease;
+
+}
+
+
+
+.commande h1{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:40px;
+
+color:#b1124a;
+
+font-weight:800;
+
+}
+
+
+
+/* formulaire */
+
+.commande form{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+
+
+.commande input,
+.commande textarea,
+.commande select{
+
+
+width:100%;
+
+padding:17px;
+
+margin-bottom:20px;
+
+border:2px solid #f8b8ca;
+
+border-radius:18px;
+
+background:white;
+
+font-size:17px;
+
+outline:none;
+
+transition:.4s;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+
+
+.commande textarea{
+
+height:130px;
+
+resize:none;
+
+}
+
+
+
+/* focus */
+
+.commande input:focus,
+.commande textarea:focus,
+.commande select:focus{
+
+border-color:#d81b60;
+
+box-shadow:0 0 15px rgba(216,27,96,.25);
+
+}
+
+
+
+/* bouton */
+
+.commande .btn{
+
+
+width:100%;
+
+padding:18px;
+
+margin-top:15px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(45deg,#b1124a,#ff4d8d);
+
+color:white;
+
+font-size:20px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.4s;
+
+
+}
+
+
+
+.commande .btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 20px 45px rgba(216,27,96,.35);
+
+}
+
+
+
+/* titre paiement */
+
+.commande select{
+
+cursor:pointer;
+
+}
+
+
+
+/* animation */
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* téléphone */
+
+@media(max-width:768px){
+
+
+.commande{
+
+padding:25px;
+
+}
+
+
+.commande h1{
+
+font-size:30px;
+
+}
+
+
+}
